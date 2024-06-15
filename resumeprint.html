@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resumePrint</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="bg-[#1e123a] h-screen relative overflow-hidden"
+      id="particles-js"
+    >
+      <div class="absolute ml-12 mt-5 flex">
+        <img
+          src="./images/sarojresume.jpg"
+          class="h-[35rem] w-[30rem] p-5 ml-[2rem]"
+        />
+        <div
+          class="mt-[25rem] ml-[15rem] border h-[2rem] w-[14rem] rounded-lg z-10 hover:bg-yellow-500 duration-500 transition-all"
+        >
+          <a href="#" class="text-white font-bold ml-10" download
+            >Download Resume
+          </a>
+        </div>
+      </div>
+      <div
+        class="h-[45rem] w-[50rem] absolute bg-purple-600/70 shadow-purple-900 ml-[40rem] -mt-[4rem] overflow-hidden rounded-full"
+      ></div>
+      <div
+        class="text-white w-[30rem] font-mono absolute ml-[45rem] mt-[11rem] -z-0"
+      >
+        <p id="typing-text"></p>
+      </div>
+    </div>
+    <script src="particles.js"></script>
+    <script src="javascriptfile/app1.js"></script>
+    <script src="javascriptfile/typeparagraph.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5ad7b368d8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

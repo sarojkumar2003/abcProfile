@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image-Gallary</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container lg:h-full lg:w-full">
+      <div class="bg-[#020617] h-screen relative z-30" id="particles-js">
+        <div>
+          <img
+            src="./images/top-left-img.png"
+            class="mix-blend-color-dodge absolute h-[20rem] -z-10"
+          />
+        </div>
+        <nav class="absolute h-10 flex">
+          <div class="flex">
+            <h1 class="text-white font-bold text-[2.5rem] font-serif ml-[4rem]">
+              <b class="text-orange-600">S</b>aroj
+              <b class="text-purple-600">S</b>harma<b class="text-red-500">.</b>
+            </h1>
+          </div>
+          <div class="mt-[1rem] ml-[39rem]">
+            <ul>
+              <li>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-linkedin text-[2rem] text-purple-600 scale-100 hover:scale-150 duration-500 transition-all"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-square-instagram text-[2rem] ml-3 text-[#d946ef] scale-100 hover:scale-150 duration-500 transition-al"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-youtube text-[2rem] ml-3 text-[#f43f5e] scale-100 hover:scale-150 duration-500 transition-all"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-facebook text-[2rem] ml-3 text-orange-400 scale-100 hover:scale-150 duration-500 transition-all"
+                  ></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav>
+          <ul
+            class="flex items-center lx:justify-center gap-y-4 fixed mt-[6rem] xl:right-[2%] z-20 top-0 bottom-0 w-full xl:w-10 xl:max-w-md xl:flex-col justify-between xl:gap-y-10 px-4 md:px-10 xl:px-0 h-[80%] xl:h-max py-8 bg-white/10 backdrop-blur-sm rounded-full xl:rounded-full"
+          >
+            <li>
+              <a href="index.html"
+                ><i class="fa-solid fa-house hover:text-[#ea6565]"></i
+              ></a>
+            </li>
+            <li>
+              <a href="about.html"
+                ><i class="fa-solid fa-user hover:text-[#fc5156]"></i
+              ></a>
+            </li>
+            <li>
+              <a href="services.html"
+                ><i
+                  class="fa-brands fa-slack hover:text-[#fc5156] text-[1.2rem]"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="myWork.html"
+                ><i class="fa-solid fa-server hover:text-[#fc5156]"></i
+              ></a>
+            </li>
+            <li>
+              <a href="gallary.html"
+                ><i
+                  class="fa-solid fa-layer-group text-[#fc5156] hover:text-[#fc5156]"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fa-solid fa-envelope hover:text-[#fc5156]"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="absolute ml-[35rem] mt-[3rem]">
+          <h4 class="font-bold text-yellow-200 font-serif text-[3rem]">
+            Gallary
+          </h4>
+        </div>
+
+        <div class="absolute flex flex-wrap mt-[7rem] ml-[8rem]">
+          <img
+            src="images/img.jpg"
+            class="h-[15rem] w-[20rem] rounded-lg grayscale hover:grayscale-0 duration-200 scale-75 hover:scale-100"
+            onclick="zoomImage(this)"
+          />
+          <img
+            src="images/img.jpg"
+            class="h-[15rem] w-[20rem] rounded-lg grayscale hover:grayscale-0 duration-200 scale-75 hover:scale-100"
+            onclick="zoomImage(this)"
+          />
+          <img
+            src="images/img.jpg"
+            class="h-[15rem] w-[20rem] rounded-lg grayscale hover:grayscale-0 duration-200 scale-75 hover:scale-100"
+            onclick="zoomImage(this)"
+          />
+          <img
+            src="images/img.jpg"
+            class="h-[15rem] w-[20rem] rounded-lg grayscale hover:grayscale-0 duration-200 scale-75 hover:scale-100"
+            onclick="zoomImage(this)"
+          />
+          <img
+            src="images/img.jpg"
+            class="h-[15rem] w-[20rem] rounded-lg grayscale hover:grayscale-0 duration-200 scale-75 hover:scale-100"
+            onclick="zoomImage(this)"
+          />
+          <img
+            src="images/img.jpg"
+            class="h-[15rem] w-[20rem] rounded-lg grayscale hover:grayscale-0 duration-200 scale-75 hover:scale-100"
+            onclick="zoomImage(this)"
+          />
+
+          <div
+            id="zoomed"
+            class="hidden fixed top-0 left-0 flex justify-center items-center bg-black bg-opacity-75 w-full h-full transition-opacity duration-500"
+          >
+            <img src="" class="max-w-full max-h-full rounded-md" />
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="./images/circles.png"
+            class="mix-blend-color-dodge bottom-0 right-0 absolute h-[10rem] -z-10"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/5ad7b368d8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function zoomImage(imgElement) {
+        // Get the zoomed image container
+        var zoomedContainer = document.getElementById("zoomed");
+        // Get the zoomed image element
+        var zoomedImage = zoomedContainer.querySelector("img");
+
+        // Set the source of the zoomed image to the clicked image
+        zoomedImage.src = imgElement.src;
+
+        // Show the zoomed image container with animation delay
+        zoomedContainer.classList.remove("hidden");
+        zoomedContainer.classList.add("opacity-0");
+        setTimeout(() => {
+          zoomedContainer.classList.remove("opacity-0");
+        }, 100); // Set the delay time in milliseconds
+
+        // Add event listener to close the zoomed image when clicking outside
+        zoomedContainer.addEventListener("click", function (event) {
+          if (event.target === zoomedContainer) {
+            // Hide the zoomed image container with animation delay
+            zoomedContainer.classList.add("opacity-0");
+            setTimeout(() => {
+              zoomedContainer.classList.add("hidden");
+              zoomedContainer.classList.remove("opacity-0");
+            }, 700); // Animation duration
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

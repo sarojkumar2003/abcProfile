@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "8HmEYmXDf7xgLF67H",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="container lg:h-full lg:w-full">
+      <div class="bg-[#020617] h-screen relative z-30" id="particles-js">
+        <div>
+          <img
+            src="./images/top-left-img.png"
+            class="mix-blend-color-dodge absolute h-[20rem] -z-10"
+          />
+        </div>
+        <nav class="absolute h-10 flex">
+          <div class="flex">
+            <h1 class="text-white font-bold text-[2.5rem] font-serif ml-[4rem]">
+              <b class="text-orange-600">S</b>aroj
+              <b class="text-purple-600">S</b>harma<b class="text-red-500">.</b>
+            </h1>
+          </div>
+          <div class="mt-[1rem] ml-[39rem]">
+            <ul>
+              <li>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-linkedin text-[2rem] text-purple-600 scale-100 hover:scale-150 duration-500 transition-all"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-square-instagram text-[2rem] ml-3 text-[#d946ef] scale-100 hover:scale-150 duration-500 transition-al"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-youtube text-[2rem] ml-3 text-[#f43f5e] scale-100 hover:scale-150 duration-500 transition-all"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-facebook text-[2rem] ml-3 text-orange-400 scale-100 hover:scale-150 duration-500 transition-all"
+                  ></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav>
+          <ul
+            class="flex items-center lx:justify-center gap-y-4 fixed mt-[6rem] xl:right-[2%] z-20 top-0 bottom-0 w-full xl:w-10 xl:max-w-md xl:flex-col justify-between xl:gap-y-10 px-4 md:px-10 xl:px-0 h-[80%] xl:h-max py-8 bg-white/10 backdrop-blur-sm rounded-full xl:rounded-full"
+          >
+            <li>
+              <a href="index.html"
+                ><i class="fa-solid fa-house hover:text-[#ea6565]"></i
+              ></a>
+            </li>
+            <li>
+              <a href="about.html"
+                ><i class="fa-solid fa-user hover:text-[#fc5156]"></i
+              ></a>
+            </li>
+            <li>
+              <a href="services.html"
+                ><i
+                  class="fa-brands fa-slack hover:text-[#fc5156] text-[1.2rem]"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="myWork.html"
+                ><i class="fa-solid fa-server hover:text-[#fc5156]"></i
+              ></a>
+            </li>
+            <li>
+              <a href="gallary.html"
+                ><i
+                  class="fa-solid fa-layer-group  hover:text-[#fc5156]"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fa-solid fa-envelope text-[#fc5156] hover:text-[#fc5156]"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="ml-[30rem] mt-[4rem] absolute">
+          <h1 class="text-[3rem] font-serif font-bold text-yellow-200">
+            Contact US
+          </h1>
+        </div>
+
+        <div class="absolute mt-[14rem] ml-[20rem] text-white">
+          <form id="form">
+            <div class="field">
+              <label
+                for="subject"
+                class="text-yellow-100 font-bold font-serif text-[1.3rem]"
+                >Subject</label
+              >
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                class="bg-transparent border-2 rounded-md border-fuchsia-500/20 ml-[7rem] w-[30rem]"
+              />
+            </div>
+            <div class="field">
+              <label
+                for="from_name"
+                class="text-yellow-100 font-bold font-serif text-[1.3rem]"
+                >Your Name</label
+              >
+              <input
+                type="text"
+                name="from_name"
+                id="from_name"
+                class="bg-transparent border-2 rounded-md border-fuchsia-500/20 ml-[4.4rem] w-[30rem] mt-5"
+              />
+            </div>
+            <div class="field">
+              <label
+                for="email_id"
+                class="text-yellow-100 font-bold font-serif text-[1.3rem]"
+                >you Email_Id</label
+              >
+              <input
+                type="text"
+                name="email_id"
+                id="email_id"
+                class="bg-transparent border-2 rounded-md border-fuchsia-500/20 ml-[2.9rem] w-[30rem] mt-5"
+              />
+            </div>
+            <div class="field">
+              <label
+                for="message"
+                class="text-yellow-100 font-bold font-serif text-[1.3rem]"
+                >message</label
+              >
+              <input
+                type="text"
+                name="message"
+                id="message"
+                class="bg-transparent border-2 rounded-md border-fuchsia-500/20 ml-[6.2rem] w-[30rem] mt-5"
+              />
+            </div>
+
+            <input
+              type="submit"
+              id="button"
+              value="Send Email"
+              class="text-yellow-200 font-mono border-2 bg-purple-700 rounded-lg w-[10rem] h-[2rem] mt-[5rem] ml-[13rem]"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/5ad7b368d8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const btn = document.getElementById("button");
+
+      document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          btn.value = "Sending...";
+
+          const serviceID = "default_service";
+          const templateID = "template_84d8t0o";
+
+          emailjs.sendForm(serviceID, templateID, this).then(
+            () => {
+              btn.value = "Send Email";
+              alert("your Request has been send!");
+            },
+            (err) => {
+              btn.value = "Send Email";
+              alert(JSON.stringify(err));
+            }
+          );
+        });
+    </script>
+  </body>
+</html>
